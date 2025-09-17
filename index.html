@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advika Enterprises - Home</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS with your public key
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual EmailJS public key
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator" id="statusIndicator"></div>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="/" class="logo" style="color: var(--primary-light);">
+                <img src="/images/CA.png" alt="ADVIKA ENTERPRISES" width="30" height="15">ADVIKA ENTERPRISES
+            </a>
+
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/blogs/">Blogs</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== UPDATED HERO SECTION ===== -->
+    <section id="home" class="hero-section section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-container">
+                    <h1 class="h2 fade-in home-txt-sec" style="color: var(--primary-light);">Your Trusted Financial
+                        Partner Globally</h1>
+                    <p class="home-text fade-in">"Providing expert financial services
+                        to help your business thrive and
+                        succeed"</p>
+                    <div class="hero-text">
+                        <p class="fade-in">Discover financial excellence with ADVIKA ENTERPRISES. Your one-stop
+                            destination for Business Setup, FEMA, Expatriates Taxation, Accounting, Indian Taxation,
+                            Auditing, Transaction Advisory, GST, and more.</p>
+                        <p class="fade-in">Our global presence ensures tailored solutions for FDI advisory, cross-border
+                            accounting, International tax planning, and Management consulting. Partner with us for a
+                            seamless journey to financial success, locally and globally.</p>
+                        <div class="text-justify fade-in">
+                            <button type="button" id="copyButton" class="btn btn-outline-primary">Call :
+                                8059653502</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-container fade-in">
+                    <img src="/images/hero_02.jpg" alt="Financial Services Illustration" class="img-fluid image-home"
+                        style=" border-radius: var(--radius-md);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-intro" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 fade-in">
+                    <img src="/images/about/about.jpg" class="img-fluid team-image"
+                        alt="Teamwork at Advika Enterprises">
+                </div>
+                <div class="col-md-6 fade-in">
+                    <div class="text-left">
+                        <h2>Step Into The Realm Of Financial Brilliance</h2>
+                        <p>Advika Enterprises is a consortium of Chartered Accountants, MBA consultants & Lawyers,
+                            providing an array of professional services seamlessly under a single roof. Founded by a
+                            seasoned team of experts, headquartered in the National Capital of India – New Delhi -
+                            Gurgaon.</p>
+                        <p>Our footprint spans across major cities in India, including the financial hub of Mumbai, and
+                            extends internationally through our affiliations. Renowned for our proficiency in unraveling
+                            intricate challenges and our proactive client engagement, we stand as a comprehensive
+                            Financial solution hub.</p>
+                        <p>With our team of experienced professionals, we provide top-notch financial consulting
+                            services that drive growth and improve performance for businesses of all sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="section service-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive financial solutions for your business needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Business setup Advisory -->
+                <div class="service-card fade-in">
+                    <div class="service-icon-container">
+                        <i class="fas fa-building service-icon"></i>
+                    </div>
+                    <h5 class="card-title">Business setup Advisory</h5>
+                    <div class="card-ptext">
+                        <div>
+                            <p><i class="fas fa-arrow-right"></i> StartUp Strategic Guidance & Funding Advisory</p>
+                            <p><i class="fas fa-arrow-right"></i> India Entry Strategy</p>
+                            <p><i class="fas fa-arrow-right"></i> Project office in India and Abroad</p>
+                            <p><i class="fas fa-arrow-right"></i> Branch office in India & Abroad</p>
+                            <p><i class="fas fa-arrow-right"></i> Liaison office in India and Abroad</p>
+                            <p><i class="fas fa-arrow-right"></i> Closing Strategy for businesses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GST Services -->
+                <div class="service-card fade-in">
+                    <div class="service-icon-container">
+                        <i class="fas fa-receipt service-icon"></i>
+                    </div>
+                    <h5 class="card-title">Indirect Taxation Advisory</h5>
+                    <div class="card-ptext">
+                        <div>
+                            <p><i class="fas fa-arrow-right"></i> Representation and Litigation under GST</p>
+                            <p><i class="fas fa-arrow-right"></i> GST Advisory</p>
+                            <p><i class="fas fa-arrow-right"></i> GST Outsourcing</p>
+                            <p><i class="fas fa-arrow-right"></i> Refund under GST</p>
+                            <p><i class="fas fa-arrow-right"></i> GST Audit</p>
+                            <p><i class="fas fa-arrow-right"></i> GST Impact Analysis and Treatments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Tax Advisory -->
+                <div class="service-card fade-in">
+                    <div class="service-icon-container">
+                        <i class="fas fa-chart-line service-icon"></i>
+                    </div>
+                    <h5 class="card-title">Corporate Tax Advisory</h5>
+                    <div class="card-ptext">
+                        <div>
+                            <p><i class="fas fa-arrow-right"></i> Direct Tax</p>
+                            <p><i class="fas fa-arrow-right"></i> Withholding Tax Advisory</p>
+                            <p><i class="fas fa-arrow-right"></i> Transfer Pricing Advisory</p>
+                            <p><i class="fas fa-arrow-right"></i> International Taxation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk & Assurance Advisory -->
+                <div class="service-card fade-in">
+                    <div class="service-icon-container">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                    </div>
+                    <h5 class="card-title">Risk & Assurance Advisory</h5>
+                    <div class="card-ptext">
+                        <div>
+                            <p><i class="fas fa-arrow-right"></i> Statutory Audit</p>
+                            <p><i class="fas fa-arrow-right"></i> Internal Audit</p>
+                            <p><i class="fas fa-arrow-right"></i> Due Diligence</p>
+                            <p><i class="fas fa-arrow-right"></i> GST Review</p>
+                            <p><i class="fas fa-arrow-right"></i> Management Audit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cross Border Transaction Advisory -->
+                <div class="service-card fade-in">
+                    <div class="service-icon-container">
+                        <i class="fas fa-globe service-icon"></i>
+                    </div>
+                    <h5 class="card-title">Cross Border Transaction Advisory</h5>
+                    <div class="card-ptext">
+                        <div>
+                            <p><i class="fas fa-arrow-right"></i> FEMA Advisory</p>
+                            <p><i class="fas fa-arrow-right"></i> Transfer Pricing</p>
+                            <p><i class="fas fa-arrow-right"></i> DTAA</p>
+                            <p><i class="fas fa-arrow-right"></i> Services to NRI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transactions Advisory Services -->
+                <div class="service-card fade-in">
+                    <div class="service-icon-container">
+                        <i class="fas fa-handshake service-icon"></i>
+                    </div>
+                    <h5 class="card-title">Transactions Advisory Services</h5>
+                    <div class="card-ptext">
+                        <div>
+                            <p><i class="fas fa-arrow-right"></i> Merger & Acquisition</p>
+                            <p><i class="fas fa-arrow-right"></i> Joint Venture</p>
+                            <p><i class="fas fa-arrow-right"></i> Business setup in India</p>
+                            <p><i class="fas fa-arrow-right"></i> Business setup outside India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG SECTION ===== -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Blog</h2>
+                <p>Stay updated with the latest financial insights and trends from Advika Enterprises</p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card fade-in">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_1.jpg" alt="GST Return Filing Services" class="blog-img">
+                        <div class="blog-category">GST</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>GST Return Filing</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <p>In the evolving landscape of Indian taxation, compliance with the Goods and Services Tax
+                            (GST)
+                            regulations is crucial for businesses of all sizes...</p>
+                        <a href="./blogs/gst-return-filing/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="blog-card fade-in">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_2.jpg" alt="GST Consultant" class="blog-img">
+                        <div class="blog-category">Consulting</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>GST Consultant</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> July 2, 2025</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <p>Navigating the complexities of Goods and Services Tax (GST) can be challenging for
+                            businesses.
+                            Proper GST compliance is essential to avoid penalties...</p>
+                        <a href="/blogs/gst-consultant/" class="blog-link">Read
+                            More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="blog-card fade-in">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_3.jpg" alt="Chartered Accountants Services" class="blog-img">
+                        <div class="blog-category">Accounting</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Chartered Accountants</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> July 18, 2025</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <p>In today's competitive business environment, managing finances efficiently is crucial for
+                            success. Chartered Accountants (CAs) play a pivotal role...</p>
+                        <a href="/blogs/chartered-accountants/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="blog-card fade-in">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_4.jpg" alt="Corporate Tax Services" class="blog-img">
+                        <div class="blog-category">Tax</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Corporate Tax</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 5, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <p>Navigating the complexities of corporate taxation can be a daunting task for businesses,
+                            especially in a dynamic environment like Panipat, Haryana...</p>
+                        <a href="/blogs/corporate-tax/" class="blog-link">Read
+                            More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="blog-card fade-in">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_5.jpg" alt="Income Tax Consultants" class="blog-img">
+                        <div class="blog-category">Tax</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Top Income Tax Consultants</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 22, 2025</span>
+                            <span><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <p>When it comes to managing income tax, having the right guidance can make all the difference.
+                            At
+                            Advika Enterprises, we pride ourselves on being among...</p>
+                        <a href="/blogs/top-income-tax-consultants/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="blog-card fade-in">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_6.jpg" alt="Expert Income Tax Consultants" class="blog-img">
+                        <div class="blog-category">Consulting</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Expert Income Tax Consultants</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> September 10, 2025</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <p>Navigating the complexities of income tax can be challenging without the right guidance. For
+                            residents and businesses in Panipat, Haryana...</p>
+                        <a href="/blogs/expert-income-tax-consultants/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Get in Touch With Us</h1>
+                <p style="color: var(----text-lighter);">We're here to answer any questions you may have and provide the
+                    support you need</p>
+            </div>
+        </section>
+
+        <!-- Contact Layout -->
+        <section class="contact-layout container">
+            <div class="left-panel animate">
+                <h2 class="panel-title">Contact Information</h2>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Our Address</h3>
+                        <p>H.No. 215/6 Huda, Panipat-132103<br>Haryana, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone Numbers</h3>
+                        <p>
+                            <a href="tel:+918059653502">+91 8059653502</a><br>
+                            <a href="tel:+919416222068">+91 9416222068</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email Address</h3>
+                        <p><a
+                                href="mailto:advikaenterprises30@gmail.com?subject=Inquiry from Website&body=Hello Advika Enterprises, I'm reaching out from your website. ✨">advikaenterprises30@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="social-contact">
+                    <h3 class="social-title">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-container animate">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3475.6519430702338!2d76.96129947552963!3d29.409736375249317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddb6e8b8b8a27%3A0x57da812246e53871!2sAdvika%20Enterprisis!5e0!3m2!1sen!2sin!4v1718700942630!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="right-panel animate">
+                <h2 class="panel-title">Send Us a Message</h2>
+
+                <!-- Form Status Messages -->
+                <div id="formStatus" class="form-status"></div>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+
+                <div class="business-hours">
+                    <h3 class="hours-title">Business Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday - Friday</span> <span>9:00 AM - 6:00 PM</span></li>
+                        <li><span>Saturday</span> <span>10:00 AM - 4:00 PM</span></li>
+                        <li><span>Sunday</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-content fade-in">
+            <h3>Ready to transform your financial strategy?</h3>
+            <p class="cta-text">Our team of experts is ready to provide personalized solutions for your business needs.
+            </p>
+            <div class="hero-btns a">
+                <a href="tel:8059653502" class="btn call-btn a"><i class="fas fa-phone"></i> Call: 8059653502</a>
+                <a href="mailto:advikaenterprises30@gmail.com?subject=Inquiry from Website&body=Hello Advika Enterprises, I'm reaching out from your website. ✨"
+                    class="btn btn-primary"><i class="fas fa-envelope"></i> Email Us</a>
+                <a href="https://wa.me/918059653502?text=Hello Advika Enterprises! I'm reaching out from your website. ✨"
+                    class="btn" style="background-color: #25D366; border-color: #25D366;"><i
+                        class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <a href="/" class="logo" style="color: var(--primary-light);">
+                            <img src="/images/CA.png" alt="ADVIKA ENTERPRISES" width="30" height="15">ADVIKA ENTERPRISES
+                        </a>
+                    </div>
+                    <p>Your trusted partner for comprehensive financial solutions and business advisory services.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Business Setup</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> FEMA Advisory</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Taxation Services</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Accounting</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> GST Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-arrow-right"></i> Home</a></li>
+                        <li><a href="/about/"><i class="fas fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Services</a></li>
+                        <li><a href="/blogs/"><i class="fas fa-arrow-right"></i> Blogs</a></li>
+                        <li><a href="/contact/"><i class="fas fa-arrow-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> H.No. 215/6 Huda, Panipat-132103</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:8059653502">8059653502</a>, <a
+                                href="tel:9416222068">9416222068</a></li>
+                        <li><i class="fas fa-envelope"></i> <a
+                                href="mailto:advikaenterprises30@gmail.com">advikaenterprises30@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 ADVIKA ENTERPRISES. All rights reserved.</p>
+            </div>
+            <div class="developer-credit">
+                <p>Developed by <a href="https://ritplpro.com" target="_blank">ritplpro</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

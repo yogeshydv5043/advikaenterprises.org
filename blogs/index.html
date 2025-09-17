@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - AdvikaEnterprises</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator" id="statusIndicator"></div>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header id="mainHeader">
+        <div class="container header-container">
+            <a href="/" class="logo" style="color: var(--primary-light);">
+                <img src="/images/CA.png" alt="ADVIKA ENTERPRISES" width="30" height="15">ADVIKA ENTERPRISES
+            </a>
+
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/blogs/" class="active">Blogs</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== BLOG HERO SECTION ===== -->
+    <section class="blog-hero section">
+        <div class="container">
+            <h1 class="fade-in">Financial Insights & Updates</h1>
+            <p class="fade-in">Stay informed with the latest financial trends, tax updates, and business strategies from
+                our expert team at Advika Enterprises.</p>
+        </div>
+    </section>
+
+    <!-- ===== BLOG FILTERS ===== -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Articles</button>
+                <button class="filter-btn" data-filter="tax">Taxation</button>
+                <button class="filter-btn" data-filter="gst">GST</button>
+                <button class="filter-btn" data-filter="accounting">Accounting</button>
+                <button class="filter-btn" data-filter="consulting">Consulting</button>
+                <button class="filter-btn" data-filter="business">Business Setup</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG SECTION ===== -->
+    <section id="blog" class="section blog-section">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <div class="blog-card fade-in" data-category="gst">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_1.jpg" alt="GST Return Filing Services" class="blog-img">
+                        <div class="blog-category">GST</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">GST Return Filing</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> June 15, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <p class="blog-excerpt">In the evolving landscape of Indian taxation,
+                            compliance with the Goods and Services Tax (GST) regulations ...</p>
+                        <a href="/blogs/gst-return-filing/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="blog-card fade-in" data-category="consulting">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_2.jpg" alt="GST Consultant" class="blog-img">
+                        <div class="blog-category">Consulting</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">GST Consultant</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> July 2, 2025</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Navigating the complexities of Goods and Services Tax (GST) can be
+                            challenging for businesses ... </p>
+                        <a href="/blogs/gst-consultant/" class="blog-link">Read
+                            More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="blog-card fade-in" data-category="accounting">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_3.jpg" alt="Chartered Accountants Services" class="blog-img">
+                        <div class="blog-category">Accounting</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Chartered Accountants Services</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> July 18, 2025</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <p class="blog-excerpt">In today’s competitive business environment, managing finances
+                            efficiently is crucial ...</p>
+                        <a href="/blogs/chartered-accountants/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="blog-card fade-in" data-category="tax">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_4.jpg" alt="Corporate Tax Services" class="blog-img">
+                        <div class="blog-category">Tax</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Corporate Tax Services</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 5, 2025</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Navigating the complexities of corporate taxation can be a daunting task
+                            for businesses ...</p>
+                        <a href="/blogs/corporate-tax/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 5 -->
+                <div class="blog-card fade-in" data-category="tax">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_5.jpg" alt="Income Tax Consultants" class="blog-img">
+                        <div class="blog-category">Tax</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Top Income Tax Consultants</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> August 22, 2025</span>
+                            <span><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <p class="blog-excerpt">When it comes to managing income tax, having the right guidance can make
+                            all the difference ...</p>
+                        <a href="/blogs/top-income-tax-consultants/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 6 -->
+                <div class="blog-card fade-in" data-category="consulting">
+                    <div class="blog-img-container">
+                        <img src="/images/blogs/blog_6.jpg" alt="Expert Income Tax Consultants" class="blog-img">
+                        <div class="blog-category">Consulting</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Expert Income Tax Consultants</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> September 10, 2025</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <p class="blog-excerpt">Navigating the complexities of income tax can be challenging without the
+                            right guidance ...</p>
+                        <a href="/blogs/expert-income-tax-consultants/" class="blog-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn disabled"><i class="fas fa-chevron-left"></i></button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn disabled">2</button>
+                <button class="pagination-btn disabled">3</button>
+                <button class="pagination-btn disabled"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <a href="/" class="logo" style="color: var(--primary-light);">
+                            <img src="/images/CA.png" alt="ADVIKA ENTERPRISES" width="30" height="15">ADVIKA ENTERPRISES
+                        </a>
+                    </div>
+                    <p>Your trusted partner for comprehensive financial solutions and business advisory services.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services"><i class="fas fa-arrow-right"></i> Business Setup</a></li>
+                        <li><a href="/services"><i class="fas fa-arrow-right"></i> FEMA Advisory</a></li>
+                        <li><a href="/services"><i class="fas fa-arrow-right"></i> Taxation Services</a></li>
+                        <li><a href="/services"><i class="fas fa-arrow-right"></i> Accounting</a></li>
+                        <li><a href="/services"><i class="fas fa-arrow-right"></i> GST Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-arrow-right"></i> Home</a></li>
+                        <li><a href="/about"><i class="fas fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="/services"><i class="fas fa-arrow-right"></i> Services</a></li>
+                        <li><a href="/blogs" class="active"><i class="fas fa-arrow-right"></i> Blogs</a></li>
+                        <li><a href="/contact"><i class="fas fa-arrow-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> H.No. 215/6 Huda, Panipat-132103</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:8059653502">8059653502</a>, <a
+                                href="tel:9416222068">9416222068</a></li>
+                        <li><i class="fas fa-envelope"></i> <a
+                                href="mailto:advikaenterprises30@gmail.com">advikaenterprises30@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 ADVIKA ENTERPRISES. All rights reserved.</p>
+            </div>
+            <div class="developer-credit">
+                <p>Developed by <a href="https://ritplpro.com" target="_blank">ritplpro</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

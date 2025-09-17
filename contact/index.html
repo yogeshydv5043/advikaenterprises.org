@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Contact Us - AdvikaEnterprises</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator" id="statusIndicator"></div>
+
+    <!-- ===== SCROLL TO TOP BUTTON ===== -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-container">
+            <a href="/" class="logo" style="color: var(--primary-light);">
+                <img src="/images/CA.png" alt="ADVIKA ENTERPRISES" width="30" height="15">ADVIKA ENTERPRISES
+            </a>
+
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/blogs/">Blogs</a></li>
+                    <li><a href="/contact/" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== CONTACT HERO SECTION ===== -->
+    <section class="contact-hero section">
+        <div class="container">
+            <h1>Connect With Advika Enterprises</h1>
+            <p>Let's start a conversation about how we can help your business thrive with our expert financial
+                solutions</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT CONTENT SECTION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info fade-in">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>H.No. 215/6 Huda, Panipat-132103</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone Numbers</h4>
+                            <p><a href="tel:8059653502">8059653502</a></p>
+                            <p><a href="tel:9416222068">9416222068</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:advikaenterprises30@gmail.com">advikaenterprises30@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 2:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form fade-in" id="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="business-setup">Business Setup Advisory</option>
+                                <option value="gst">Indirect Taxation Advisory</option>
+                                <option value="corporate-tax">Corporate Tax Advisory</option>
+                                <option value="risk">Risk & Assurance Advisory</option>
+                                <option value="cross-border">Cross Border Transaction Advisory</option>
+                                <option value="transaction">Transactions Advisory Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAP SECTION ===== -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Find Us Here</h2>
+                <p>Visit our office or get directions</p>
+            </div>
+            <div class="map-container fade-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3475.6519430702338!2d76.96129947552963!3d29.409736375249317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ddb6e8b8b8a27%3A0x57da812246e53871!2sAdvika%20Enterprisis!5e0!3m2!1sen!2sin!4v1718700942630!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <div class="cta-content fade-in">
+        <h3>Have questions? Get in touch today!</h3>
+        <p class="cta-text">Our team of experts is ready to provide personalized
+            solutions for your business needs.</p>
+        <div class="hero-btns a">
+            <a href="tel:8059653502" class="btn call-btn"><i class="fas fa-phone"></i> Call: 8059653502</a>
+            <a href="mailto:advikaenterprises30@gmail.com?subject=Service Inquiry&body=Hello Advika Enterprises, I'm interested in your services."
+                class="btn btn-secondary"><i class="fas fa-envelope"></i> Email Us</a>
+            <a href="https://wa.me/918059653502?text=Hello Advika Enterprises! I'm interested in your services."
+                class="btn" style="background-color: #25D366; border-color: #25D366;"><i class="fab fa-whatsapp"></i>
+                WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <a href="/" class="logo" style="color: var(--primary-light);">
+                            <img src="/images/CA.png" alt="ADVIKA ENTERPRISES" width="30" height="15">ADVIKA ENTERPRISES
+                        </a>
+                    </div>
+                    <p>Your trusted partner for comprehensive financial solutions and business advisory services.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Business Setup</a>
+                        </li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Taxation Advisory</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Risk & Assurance</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Cross Border Transactions</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Transaction Advisory</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-arrow-right"></i> Home</a></li>
+                        <li><a href="/about/"><i class="fas fa-arrow-right"></i> About Us</a></li>
+                        <li><a href="/services/"><i class="fas fa-arrow-right"></i> Services</a></li>
+                        <li><a href="/blogs/"><i class="fas fa-arrow-right"></i> Blogs</a></li>
+                        <li><a href="/contact/"><i class="fas fa-arrow-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> H.No. 215/6 Huda, Panipat-132103</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:8059653502">8059653502</a>, <a
+                                href="tel:9416222068">9416222068</a></li>
+                        <li><i class="fas fa-envelope"></i> <a
+                                href="mailto:advikaenterprises30@gmail.com">advikaenterprises30@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 ADVIKA ENTERPRISES. All rights reserved.</p>
+            </div>
+            <div class="developer-credit">
+                <p>Developed by <a href="https://ritplpro.com" target="_blank">ritplpro</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
